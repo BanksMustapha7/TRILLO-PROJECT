@@ -1,0 +1,21 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "description": "Hotel Advertisement Webpage",
+  "main": "index.js",
+  "scripts": {
+     "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "keywords": [
+    "Hotel",
+    "vacation",
+    "adverts",
+    "advertisement",
+    "hotels"
+  ],
+  "author": "Banks Mustapha",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

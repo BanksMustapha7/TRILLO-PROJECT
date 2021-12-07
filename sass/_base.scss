@@ -1,0 +1,68 @@
+$color-primary: #eb2f64;
+$primary-light: #ff3366;
+$primary-dark: #ba265d;
+
+$grey-light1: #faf9f9;
+$grey-light2: #f4f2f2;
+$grey-light3: #f0eeee;
+$grey-light4: #ccc;
+
+$grey-dark1: #333;
+$grey-dark2: #777;
+$grey-dark3: #999;
+
+$shadow-dark:  0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0,0,0,0.6);
+
+$bp-largest: 75rem;     //1200px
+$bp-large: 68.75rem;    //1100px
+$bp-medium: 56.25rem;   //900px
+$bp-small: 37.5rem;     // 600px;
+
+:root{
+    --color-primary: #eb2f64;
+    --primary-light: #ff3366;
+    --primary-dark: #ba265d;
+
+     --grey-light1: #faf9f9;
+     --grey-light2: #f4f2f2;
+     --grey-light3: #f0eeee;
+     --grey-light4: #ccc;  
+     --grey-dark1: #333;
+     --grey-dark2: #777;
+     --grey-dark3: #999;
+
+     --shadow-dark:  0 2rem 6rem rgba(0, 0, 0, 0.3);
+     --shadow-light: 0 2rem 5rem rgba(0,0,0,0.6);
+     --line: 1px solid var(--grey-light2);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //10px = 1rem
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+
+}
+
+body {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: 400;
+     color: var(--grey-dark2);
+     line-height: 1.6;
+     background-image: linear-gradient(to right bottom, $color-primary, $primary-light);
+     background-size: cover;
+     background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
